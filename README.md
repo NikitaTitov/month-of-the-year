@@ -1,0 +1,1 @@
+This is repository for a studying, you can take all what you need :)
