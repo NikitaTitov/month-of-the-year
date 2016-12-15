@@ -26,8 +26,12 @@ public enum Month {
     }
 
     public Month nextMonth() {
-        Month result = Month.values()[this.ordinal()+1];
-        return result;
+        return Month.values()[this.ordinal() == 10 ? this.ordinal() - 10 : this.ordinal() + 1];
+    }
+
+    public Month prevMonth() {
+       return Month.values()[this.ordinal() == 0 ? this.ordinal() + 10 : this.ordinal() - 1];
+
     }
 
 }
